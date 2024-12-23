@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management</h1>
+    <form id="product-form">
+      <label for="name">Product Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="category">Category:</label>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Keyboard">Keyboard</option>
+        <option value="Mouse">Mouse</option>
+        <option value="Switches">Switches</option>
+        <option value="Carry Case">Carry Case</option>
+        <option value="Capture Card">Capture Card</option>
+      </select>
+      
+      <label for="mrp">MRP:</label>
+      <input type="number" id="mrp" required>
+      
+      <label for="price">Current Price:</label>
+      <input type="number" id="price" required>
+
+      <label for="image">Image URL:</label>
+      <input type="url" id="image" placeholder="Enter image link (optional)">
+      
+      <button type="submit">Add Product</button>
+    </form>
+    
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>MRP</th>
+          <th>Current Price</th>
+          <th>Discount (%)</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

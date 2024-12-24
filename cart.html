@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeskGear-cart</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/1d5744c281.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- navbar -->
+    <header>
+        <nav class="navbar container justify-space-between">
+          <!-- Brand Logo -->
+          <div class="brand-name">
+            <h2>DeskGear</h2>
+          </div>
+          <!-- Navigation Links -->
+          <div class="nav-link">
+            <ul class="flex list-none">
+              <li><a href="/index.html" class="text-d-none">Home</a></li>
+              <li><a href="/category/keyboard.html" class="text-d-none">Keyboard</a></li>
+              <li><a href="/category/mouse.html" class="text-d-none">Mouse</a></li>
+              <li><a href="/category/desk-accessories.html" class="text-d-none">Desk Accessories</a></li>
+            </ul>
+          </div>
+          <!-- Search Box -->
+          <div class="search-box">
+            <input type="text" placeholder="Search for products..." id="search">
+          </div>
+          <!-- User Actions -->
+          <div class="flex gap-2">
+            <div class="cart-icon">
+              <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          <a href="/login.html">  <button>Login</button></a>
+          </div>
+        </nav>
+      </header>
+      <section class="cart-section">
+        <div class="container">
+          <div class="header">
+            <h1>Your Cart</h1>
+          </div>
+      
+          <div class="cart-container">
+            <div class="cart-box">
+              <div class="cart-content">
+                <div class="cart-list">
+                  <ul>
+                    <li class="cart-item">
+                      <div class="item-image">
+                        <img class="item-img" src="your-image-url.jpg" alt="Product">
+                      </div>
+                      <div class="item-details">
+                        <h2>Item Name</h2>
+                        <p>Item description</p>
+                        <p>Price: $10</p>
+                      </div>
+                      <div class="item-action">
+                        <button class="remove-btn">Remove</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- js files -->
+      <script src="/search.js"></script>
 </body>
 </html>

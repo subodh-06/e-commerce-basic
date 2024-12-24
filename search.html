@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard -DeskGear</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/1d5744c281.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar container justify-space-between">
+          <!-- Brand Logo -->
+          <div class="brand-name">
+            <h2>DeskGear</h2>
+          </div>
+          <!-- Navigation Links -->
+          <div class="nav-link">
+            <ul class="flex list-none">
+              <li><a href="/index.html" class="text-d-none">Home</a></li>
+              <li><a href="/category/keyboard.html" class="text-d-none">Keyboard</a></li>
+              <li><a href="/category/mouse.html" class="text-d-none">Mouse</a></li>
+              <li><a href="/category/desk-accessories.html" class="text-d-none">Desk Accessories</a></li>
+            </ul>
+          </div>
+          <!-- Search Box -->
+          <div class="search-box">
+            <input type="text" placeholder="Search for products..." id="search">
+          </div>
+          <!-- User Actions -->
+          <div class="flex gap-2">
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          <a href="/login.html">  <button>Login</button></a>
+          </div>
+        </nav>
+      </header>
+        <!-- products -->
+         <div class="container flex  " style="margin-left: 4rem; gap: 3px;">
+            <h2 class="search-text" style="color: rgb(29, 29, 31); font-size: 2rem; font-weight: 400;">Search reasult for:</h2>
+            <h3 id="search-for" style="color: rgb(29, 29, 31); font-size: 2rem; font-weight: 400;"> keyboard</h3>
+         </div>
+<!-- Container for the cards -->
+<div class="container">
+    <div id="product-container" class="flex flex-wrap">
+      <!-- Product cards will be appended here -->
+    </div>
+  </div>
+  
+  <!-- Template for product card -->
+  <template id="product-box">
+    <div class="card">
+      <a href="#" class="card-image-wrapper">
+        <img src="" alt="Product image" class="card-image" />
+        <span class="card-discount"></span>
+      </a>
+      <div class="card-content">
+        <a href="#">
+          <h5 class="card-title"></h5>
+        </a>
+        <div class="card-price-section">
+          <p>
+            <span class="card-price"></span>
+            <span class="card-price-strike"></span>
+          </p>
+          <div class="card-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span class="card-rating-value"></span>
+          </div>
+        </div>
+        <a href="#" class="card-button">
+          Add to cart
+        </a>
+      </div>
+    </div>
+  </template>
+    <!-- footer -->
+    <footer>
+        <div class=" container flex flex-wrap justify-space-between gap-2">
+          <!-- Brand and Description -->
+          <div class="brand-section">
+            <div class="brand-name">
+              <h2>DeskGear</h2>
+            </div>
+            <p>Your one-stop destination for all your desk essentials. Shop the best at affordable prices.</p>
+          </div>
+         <!-- Payment Methods -->
+         <div class="payment-section">
+          <h3>Payment Accepted Via</h3>
+          <div class="payment-logos flex gap-2">
+            <img src="/public/png-transparent-mastercard-logo-mastercard-credit-card-payment-visa-nyse-ma-mastercard-logo-text-logo-sign.png" alt="MasterCard" width="40">
+            <img src="/public/upi.png" alt="UPI" width="40">
+            <img src="/public/visa.jpg" alt="Visa" width="40">
+            <img src="/public/Rupay.png" alt="Rupay" width="40">
+          </div>
+          <p>Secured by <strong>Razorpay</strong></p>
+        </div>
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul class="list-none">
+              <li><a href="#" class="text-d-none">Home</a></li>
+              <li><a href="#" class="text-d-none">Sign-In/Sign-Up</a></li>
+              <li><a href="#" class="text-d-none">Terms & Conditions</a></li>
+              <li><a href="#" class="text-d-none">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+       <div class="container flex justify-space-between">
+        <div class="social-icons flex gap-2">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p class="text-center">&copy; 2024 DeskGear. All rights reserved.</p>
+       </div>
+      </footer>
+      <!-- js files -->
+      <script src="/search.js"></script>
+      
+</body>
+
+</html>

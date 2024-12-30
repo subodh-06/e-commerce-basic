@@ -12,37 +12,47 @@
 <body>
     <!-- navbar -->
     <header>
-        <nav class="navbar container justify-space-between">
-          <!-- Brand Logo -->
-          <div class="brand-name">
-            <h2>DeskGear</h2>
+      <nav class="navbar container ">
+        <!-- Brand Logo -->
+        <div class="brand-name">
+          <h2>DeskGear</h2>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="nav-link" id="nav-link">
+          <ul class="flex list-none">
+            <li><a href="/index.html" class="text-d-none">Home</a></li>
+            <li><a href="/category/keyboard.html" class="text-d-none">Keyboard</a></li>
+            <li><a href="/category/mouse.html" class="text-d-none">Mouse</a></li>
+            <li><a href="/category/desk-accessories.html" class="text-d-none">Desk Accessories</a></li>
+          </ul>
+        </div>
+    
+        <!-- Search Box -->
+        <div class="search-box">
+          <input type="text" placeholder="Search for products..." id="search">
+        </div>
+    
+        <!-- User Actions -->
+        <div class="flex gap-2 user-actions">
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
-          <!-- Navigation Links -->
-          <div class="nav-link">
-            <ul class="flex list-none">
-              <li><a href="/index.html" class="text-d-none">Home</a></li>
-              <li><a href="/category/keyboard.html" class="text-d-none">Keyboard</a></li>
-              <li><a href="/category/mouse.html" class="text-d-none">Mouse</a></li>
-              <li><a href="/category/desk-accessories.html" class="text-d-none">Desk Accessories</a></li>
-            </ul>
-          </div>
-          <!-- Search Box -->
-          <div class="search-box">
-            <input type="text" placeholder="Search for products..." id="search">
-          </div>
-          <!-- User Actions -->
-          <div class="flex gap-2">
-            <div class="cart-icon">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-          <a href="/login.html">  <button>Login</button></a>
-          </div>
-        </nav>
-      </header>
+          <a href="/login.html">
+            <button>Login</button>
+          </a>
+        </div>
+    
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
     <!-- hero -->
     <div class="hero">
         <div class="container">
-            <div class="flex"><img src="https://resource.logitech.com/w_695,c_limit,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2024-update/mx-master-3s-mouse-tab-1.jpg?v=1" alt="" style=" height: 20rem">
+            <div class="flex">
                 <div class="flex align-item-center justfy-context-center flex-col">
                     <h2 class="page-title">Find Perfect Desk Gadgets</h2>
                     <p class="page-desc">Unleash your potential with a combination of MX solutions that work best for you. Whether you're dedicated to cultivating your most productive setup.</p>
@@ -148,7 +158,8 @@
       </footer>
       <!-- js files -->
        <script src="/search.js"></script>
-       <script src="/deskup.js"></script>
+       <script src="/category/deskup.js"></script>
+       <script src="../script.js"></script>
 </body>
 
 </html>

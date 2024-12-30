@@ -1,6 +1,6 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
-    const API_URL = "http://localhost:3000/api/products";
+    const API_URL = "../api/db.json";
     const productContainer = document.getElementById("product-container");
     const template = document.getElementById("product-card-template");
 

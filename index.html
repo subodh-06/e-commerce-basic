@@ -11,13 +11,14 @@
 
 <body>
   <header>
-    <nav class="navbar container justify-space-between">
+    <nav class="navbar container ">
       <!-- Brand Logo -->
       <div class="brand-name">
         <h2>DeskGear</h2>
       </div>
+      
       <!-- Navigation Links -->
-      <div class="nav-link">
+      <div class="nav-link" id="nav-link">
         <ul class="flex list-none">
           <li><a href="/index.html" class="text-d-none">Home</a></li>
           <li><a href="/category/keyboard.html" class="text-d-none">Keyboard</a></li>
@@ -25,19 +26,30 @@
           <li><a href="/category/desk-accessories.html" class="text-d-none">Desk Accessories</a></li>
         </ul>
       </div>
+  
       <!-- Search Box -->
       <div class="search-box">
         <input type="text" placeholder="Search for products..." id="search">
       </div>
+  
       <!-- User Actions -->
-      <div class="flex gap-2">
+      <div class="flex gap-2 user-actions">
         <div class="cart-icon">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
-      <a href="/login.html">  <button>Login</button></a>
+        <a href="/login.html">
+          <button>Login</button>
+        </a>
+      </div>
+  
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
   </header>
+  
+  
   <!-- crousel -->
   <div class="container ">
     <!-- Slideshow container -->
@@ -68,7 +80,7 @@
   <main>
     <div class="container">
       <div class="sec-title">Best Selling</div>
-      <div class="product-container">
+      <div class="product-container flex-wrap">
         <div class="product-card">
           <img src="public/Keyboard.jpg" width="260" alt="Keychron Q Series">
           <h2>Keyboard</h2>
@@ -532,6 +544,7 @@
     </div>
   </div>
 </div>
+
 
   </main>
   <footer>

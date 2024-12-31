@@ -1,3 +1,13 @@
+//navbar
+const hamburger = document.getElementById('hamburger');
+const navLink = document.getElementById('nav-link');
+
+hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('show');
+});
+
+//end navbar
+
 // crousel
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -29,14 +39,6 @@ function showSlides(n) {
 }
 
 
-// navbar responsive
-  const hamburger = document.getElementById('hamburger');
-  const navLink = document.getElementById('nav-link');
-
-  hamburger.addEventListener('click', () => {
-    navLink.classList.toggle('show');
-  });
-
   const slider = document.querySelector('.cards-container');
 
   let isDown = false;
@@ -64,7 +66,7 @@ function showSlides(n) {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scrolling speed
+    const walk = (x - startX) * 2;
     slider.scrollLeft = scrollLeft - walk;
   });
   
